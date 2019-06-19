@@ -20,7 +20,7 @@
 
 RatelManager的作用类似XposedInstaller，实现对Ratel模块的管理，不过需要注意的是，embed模式下的模块，可以在没有RatelManager的环境下直接运行。
 
-![1](img/1.png)
+![1](img/1.png)![2](img/2.png)![3](img/3.png)![4](img/4.png)![5](img/5.png)![6](img/6.png)
 
 
 
