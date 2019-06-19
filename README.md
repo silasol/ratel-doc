@@ -22,5 +22,135 @@ RatelManager的作用类似XposedInstaller，实现对Ratel模块的管理，不
 
 ![img](img/ratelManager1.jpg)![img](img/ratelManager2.jpg)
 
+# 开发文档
+如果只是使用标准的xposed功能，那么引入标准xposed依赖即可
+```
+dependencies {
+    compileOnly 'de.robv.android.xposed:api:82'
+}
+```
+
+如果希望使用ratel提供的扩展api，那么可以选择依赖ratelAPI
+```
+repositories {
+    maven {
+        name "contralSnapshot"
+        url "https://oss.sonatype.org/content/repositories/snapshots/"
+    }
+}
+dependencies {
+ compileOnly 'com.virjar:ratel-api:1.0.0-SNAPSHOT'
+}
+```
+请注意，ratel的依赖发布到mavenCentral的。生产环境依赖可以选择
+```
+repositories {
+mavenCentral()
+}
+```
+或者使用阿里云镜像提速
+```
+    repositories {
+        maven {
+            name "aliyunmaven"
+            url "https://maven.aliyun.com/repository/public"
+        }
+        maven {
+            name "aliyunGoogle"
+            url "https://maven.aliyun.com/repository/google"
+        }
+
+    }
+```
+
+## ratel定制API总线
+接口一览
+```
+package com.virjar.ratel.api;
+
+import android.annotation.SuppressLint;
+import android.content.Context;
+
+public class RatelToolKit {
+    /**
+     * 1。 以下对象，是暴露给调用方的额外API，可以通过他们操作ratel提供的额外功能（除开xposed本身功能之外）
+     */
+    //全局的一个context，context是调用Android系统功能的重要对象。有这个对象之后，无需手动通过拦截attach的方式获取context
+    @SuppressLint("StaticFieldLeak")
+    public static Context sContext = null;
+
+    /**
+     * ratel框架的配置信息，代表了ratel编码、打包、运行过程产生的一些特定flag
+     */
+    public static RatelConfig ratelConfig = null;
+
+    /**
+     * ratel支持对文件进行重定向
+     */
+    public static IORelocator ioRelocator = null;
+
+    /**
+     * 当前进程名称
+     */
+    public static String processName = null;
+
+    /**
+     * 当成packageName
+     */
+    public static String packageName = null;
 
 
+    /**
+     * 虚拟化环境功能支持
+     */
+    public static VirtualEnv virtualEnv = null;
+
+    /**
+     * 虚拟化环境下，sdcard将会被隔离，导致无法往sdcard写入数据。但是如果ratel模块期望通过sdcard和其他app交换数据，那么需要通过一个sdcard白名单进行放行
+     */
+    public static String whiteSdcardDirPath = null;
+    /**
+     * @hidden
+     */
+    public static RatalStartUpCallback ratalStartUpCallback = null;
+
+    public static void setOnRatelStartUpCallback(RatalStartUpCallback ratelStartUpCallback) {
+        RatelToolKit.ratalStartUpCallback = ratelStartUpCallback;
+    }
+
+
+    /**
+     * 2。 以下以下对象，是用户层不需要关心的。我也不会做解释
+     */
+    public static HookProvider usedHookProvider;
+
+    public static String TAG = null;
+
+
+}
+
+```
+
+# 和ratel类似的产品
+
+竞争使得我们更加优秀，即时竟品还不认为我们是他竞品。
+
+1. 本方案始祖，太极: https://taichi.cool/README_CN.html
+2. Xpatch，没有开源，但是可能是最容易反编译出来的一个产品： https://github.com/WindySha/Xpatch
+3. 傀儡管理器,作者很搞笑： http://qssq666.cn/2019/04/19/puppet_publish/
+4. 应用转生，目前还在作者自己的技术群里演示界面，实际上方案效果不明，暂无法评判。
+
+# 如何使用
+1. 使用ratel在线平台感染app： 
+http://ratel.virjar.com/#/login?redirect=%2F
+
+在这里上传apk，等待系统处理完成，下载apk即可
+
+2. 下载并安装ratelManager
+https://virjar-comon.oss-cn-beijing.aliyuncs.com/RatelManager_1.0.0.apk
+
+3. 编写Xposed模块插件（也可以叫做Ratel模块插件）,安装到手机，并在RatelManager中配置即可
+
+
+# 关于内测
+ratel目前处于内测阶段，仅对小部分用户开放。如想获得内测资格，联系qq:1076208143 weixin:odengweijia
