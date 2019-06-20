@@ -1,7 +1,7 @@
 # ratel-doc
 
 # 捐赠
-求请我和咖啡，不要瑞幸优惠券，要钱
+求请我喝咖啡，不要瑞幸优惠券，要钱
 ![alipay](img/reward.jpg)
 
 # 文档正文
@@ -14,7 +14,7 @@
 5. ratel模块开发，无需重启手机即可生效（就xposed框架本身来说，也可以通过一定手段达到这个效果，参考我的另一个项目[ucrack](https://gitee.com/virjar/ucrack)）
 6. API扩展，ratel在xposed framework层面之上，提供了ratel独有的一些特殊API。可以实现一些xposed本身不提供的强大功能。当然，如果你按照标准的xposed API开发，那么ratel支持绝大部分xposed特性
 7. external&embed模式共存，在免root环境下，如果把模块植入到app内部，那么可以使得这个app可以被广大普通用户直接使用。因为DIY功能的使用门槛降低到了只需要下载AndroidAPK了。可以理解为您家老人都可以正常使用ratel了
-9. 内置设备模拟+一健新机+多账号共存功能。这个功能各位不要滥用，比较狂暴
+9. 内置设备模拟+一键新机+多账号共存功能。这个功能各位不要滥用，比较狂暴
 
 # Ratel Manager
 
@@ -133,7 +133,7 @@ public class RatelToolKit {
 
 # 和ratel类似的产品
 
-竞争使得我们更加优秀，即时竟品还不认为我们是他竞品。
+竞争使得我们更加优秀，即使竟品还不认为我们是他竞品。
 
 1. 本方案始祖，太极: https://taichi.cool/README_CN.html
 2. Xpatch，没有开源，但是可能是最容易反编译出来的一个产品： https://github.com/WindySha/Xpatch
