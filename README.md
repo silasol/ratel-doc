@@ -1,8 +1,5 @@
 # ratel-doc
 
-# 捐赠
-求请我喝咖啡，不要瑞幸优惠券，要钱
-![alipay](img/reward.jpg)
 
 # 文档正文
 平头哥（ratel）是一个能够在免root手机中使用xposed的框架。支持5.0-9.0。使用ratel可以任意控制app的行为，如同开启上帝模式一样。他有如下特性：
@@ -152,5 +149,3 @@ https://virjar-comon.oss-cn-beijing.aliyuncs.com/RatelManager_1.0.0.apk
 3. 编写Xposed模块插件（也可以叫做Ratel模块插件）,安装到手机，并在RatelManager中配置即可
 
 
-# 关于内测
-ratel目前处于内测阶段，仅对小部分用户开放。如想获得内测资格，联系qq:1076208143 weixin:odengweijia
