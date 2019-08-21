@@ -29,14 +29,8 @@ dependencies {
 
 如果希望使用ratel提供的扩展api，那么可以选择依赖ratelAPI
 ```
-repositories {
-    maven {
-        name "contralSnapshot"
-        url "https://oss.sonatype.org/content/repositories/snapshots/"
-    }
-}
 dependencies {
- compileOnly 'com.virjar:ratel-api:1.0.0-SNAPSHOT'
+ compileOnly 'com.virjar:ratel-api:1.0.0'
 }
 ```
 请注意，ratel的依赖发布到mavenCentral的。生产环境依赖可以选择
