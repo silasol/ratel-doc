@@ -144,7 +144,7 @@ http://ratel.virjar.com/#/login?redirect=%2F
 在这里上传apk，等待系统处理完成，下载apk即可
 
 2. 下载并安装ratelManager
-https://virjar-comon.oss-cn-beijing.aliyuncs.com/RatelManager_1.0.0.apk
+[RatelManager_1.0.2-release.apk](RatelManager_1.0.2-release.apk)
 
 3. 编写Xposed模块插件（也可以叫做Ratel模块插件）,安装到手机，并在RatelManager中配置即可
 
