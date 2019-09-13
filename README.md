@@ -1,5 +1,43 @@
 # ratel-doc
 
+<<<<<<< HEAD
+=======
+# 发布记录
+
+## 引擎发布记录
+
+### V1.2.2
+1. 支持通过ratel-api实现指纹数据填充
+2. 支持通过ratel-manager获取真实的设备唯一id
+
+### V1.2.1
+1. 在xposed函数回调过程，如果发生了异常，需要打印bridge日志堆栈。避免异常被淹没
+2. sdcard白名单，自动创建文件夹，白名单提升到父目录
+3. 框架hook逻辑，全部替换为rposed
+4. 允许从命令行附加额外属性，范例``ratel_properties_virtualEnvModel=START_UP``
+5. virtualEnvModel的value值，统一定义为``com.virjar.ratel.api.VirtualEnv.VirtualEnvModel.children``，避免理解误差
+6. virtualEvn的log tag，单独剥离，并且只在debug版本打印，避免输出刷屏
+7. webview的签名检查服务hook逻辑错误 bugfix
+8. 当手机使用VPN的时候，隐藏VPN标记（TODO 还不完善）
+9. 自动隐藏Wi-Fi列表BSSID，避免app通过Wi-Fi列表定位
+
+
+
+
+## manager发布记录
+
+### V1.0.3
+1. 当不需要守护进程的时候，不引导用户到辅助模式设置页面
+2. 申请获得定位信息，申请获得序列号、imei信息，提供给ratelAPI使用
+3. 程存活，实时保活。经常自杀后能够马上唤醒
+
+## server发布记录
+### V1.0
+预计2019年09月21日正式上线，敬请期待。官网地址：http://ratel.virjar.com
+
+
+
+>>>>>>> b4414827a0a645ace79112379f77922d612ab0c6
 # 文档正文
 平头哥（ratel）是一个能够在免root手机中使用xposed的框架。支持5.0-9.0。使用ratel可以任意控制app的行为，如同开启上帝模式一样。他有如下特性：
 
