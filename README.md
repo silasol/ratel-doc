@@ -33,7 +33,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 ### V1.2.2
 1. 支持通过ratel-api实现指纹数据填充
 2. 支持通过ratel-manager获取真实的设备唯一id
-3. 深度设备指纹方案对抗
+3. 深度设备指纹对抗
+4. 跨进程IPC过程，签名替换，解决授权登陆出现非正版应用的问题(请注意，跨进程调用需要同步感染双方apk，且建议安装RatelManager，且RatelManager版本大于1.0.4)
+
 
 ### V1.2.1
 1. 在xposed函数回调过程，如果发生了异常，需要打印bridge日志堆栈。避免异常被淹没
