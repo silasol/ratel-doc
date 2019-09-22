@@ -35,7 +35,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 2. 支持通过ratel-manager获取真实的设备唯一id
 3. 深度设备指纹对抗
 4. 跨进程IPC过程，签名替换，解决授权登陆出现非正版应用的问题(请注意，跨进程调用需要同步感染双方apk，且建议安装RatelManager，且RatelManager版本大于1.0.4)
-
+5. 迁移sandhook代码，支持AndroidQ
+6. 迁移sandhook代码，支持safe hook static method
+7. [bugfix]当模块代码存在so的时候，nativeLibaryDirectory设置错误
 
 ### V1.2.1
 1. 在xposed函数回调过程，如果发生了异常，需要打印bridge日志堆栈。避免异常被淹没
@@ -55,9 +57,8 @@ ratelManager的apk，在ratel server的首页有下载地址
 1. 当不需要守护进程的时候，不引导用户到辅助模式设置页面
 2. 申请获得定位信息，申请获得序列号、imei信息，提供给ratelAPI使用
 3. 程存活，实时保活。经常自杀后能够马上唤醒
-4. 跨进程IPC过程，签名替换，解决授权登陆出现非正版应用的问题(请注意，跨进程调用需要同步感染双方apk，且建议安装RatelManager，且RatelManager版本大于1.0.4)
-5. 迁移sandhook代码，支持AndroidQ
-6. 迁移sandhook代码，支持safe hook static method
+4. 提供一机多号操作面板
+
 
 ## server发布记录
 ### V1.0
