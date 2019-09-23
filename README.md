@@ -30,6 +30,7 @@ ratel 大概分为以下模块
 ## [ratel server感染apk的后台服务](2.ratelServer.md)
 ## [ratel管理器，类似xposed intalller](3.ratelManager.md)
 ## [ratelAPI 通过API编程进行模块开发和ratel功能定制](4.ratelAPI.md)
+## [虚拟化相关](5.virtual_env.md)
 
 # 基本使用流程
 1. 使用ratel在线平台感染app： http://ratel.virjar.com/
@@ -37,6 +38,7 @@ ratel 大概分为以下模块
 2. 下载并安装ratelManager
 ratelManager的apk，在ratel server的首页有下载地址
 3. 编写Xposed模块插件（也可以叫做Ratel模块插件）,安装到手机，并在RatelManager中配置即可
+4. xposed模块插件标准demo可以参考: http://git.virjar.com/ratel/ratel-demo
 
 # 发布记录
 ## 引擎发布记录
