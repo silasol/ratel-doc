@@ -31,6 +31,7 @@ ratel 大概分为以下模块
 ## [ratel管理器，类似xposed intalller](3.ratelManager.md)
 ## [ratelAPI 通过API编程进行模块开发和ratel功能定制](4.ratelAPI.md)
 ## [虚拟化相关](5.virtual_env.md)
+## [常见问题处理](6.faq.md)
 
 # 基本使用流程
 1. 使用ratel在线平台感染app： http://ratel.virjar.com/
