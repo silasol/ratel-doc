@@ -47,6 +47,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 ### V1.2.3
 1. dexmaker优化，ratel框架hook的method stub资源，通过预构建的方法产生，减少stub资源使用量，ratel framework hook逻辑不再使用dexmaker
 2. [bugfix] 当外置插件和内置插件package相同，且外置插件配置生效，之后外置插件被卸载。此时应该回退使用内置插件功能，而非显示文案:"the embed xposed module :{" + embedXposedModuleApkPackage + "} has load from external already ,skip it"
+3. [bugfix] 指纹模拟逻辑，部分常见出现local reference overflow导致crash
+4. 支持execve io hook
+5. 重构虚拟设备和一机多号文件组织结构管理，支持内部文件指向sdcard（可以使得在非root设备调试的时候，观察app内部文件）
 
 ### V1.2.2
 1. 支持通过ratel-api实现指纹数据填充
