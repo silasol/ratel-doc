@@ -44,6 +44,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.2.4
+1. [bugfix] dex short value  65535 overflow when rebuild entry point dex sometimes
+
 ### V1.2.3
 1. dexmaker优化，ratel框架hook的method stub资源，通过预构建的方法产生，减少stub资源使用量，ratel framework hook逻辑不再使用dexmaker
 2. [bugfix] 当外置插件和内置插件package相同，且外置插件配置生效，之后外置插件被卸载。此时应该回退使用内置插件功能，而非显示文案:"the embed xposed module :{" + embedXposedModuleApkPackage + "} has load from external already ,skip it"
