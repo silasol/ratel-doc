@@ -46,6 +46,7 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 ### V1.2.4
 1. [bugfix] dex short value  65535 overflow when rebuild entry point dex sometimes
+2. 打包过程，清理一个不需要的资源，在输出APK中节约2M空间
 
 ### V1.2.3
 1. dexmaker优化，ratel框架hook的method stub资源，通过预构建的方法产生，减少stub资源使用量，ratel framework hook逻辑不再使用dexmaker
