@@ -50,6 +50,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 3. ratelAPI剥离XposedAPI，在ratelAPI中，无法看到Xposed相关class(为了彻底隐藏xposed在虚拟机的出现)。不过如果你的模块仍然是一个xposed标准模块，那么依然可以运行在ratel环境中
 4. 抽取部分逆向工具链
 5. 绕过一个多开对抗检测点
+6. 代码载体，由apk转化为jar，且对无用的Android相关class进行清理
+7. 修复一个1.2.3版本重构文件系统结构导致的bug
+8. 迁移sandhook相关class，尽量避免sandhook痕迹泄露
 
 ### V1.2.3
 1. dexmaker优化，ratel框架hook的method stub资源，通过预构建的方法产生，减少stub资源使用量，ratel framework hook逻辑不再使用dexmaker
