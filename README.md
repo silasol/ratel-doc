@@ -48,6 +48,8 @@ ratelManager的apk，在ratel server的首页有下载地址
 1. [bugfix] dex short value  65535 overflow when rebuild entry point dex sometimes
 2. 打包过程，清理一个不需要的资源，在输出APK中节约2M空间
 3. ratelAPI剥离XposedAPI，在ratelAPI中，无法看到Xposed相关class(为了彻底隐藏xposed在虚拟机的出现)。不过如果你的模块仍然是一个xposed标准模块，那么依然可以运行在ratel环境中
+4. 抽取部分逆向工具链
+5. 绕过一个多开对抗检测点
 
 ### V1.2.3
 1. dexmaker优化，ratel框架hook的method stub资源，通过预构建的方法产生，减少stub资源使用量，ratel framework hook逻辑不再使用dexmaker
