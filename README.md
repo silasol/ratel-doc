@@ -44,6 +44,16 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.2.5
+1. [feature] 在android7.0上，class init 符号未适配导致safe hook static method失效
+2. [feature] 无论如何，只要class没有初始化，那么都使用延迟hook方案
+3. [feature] 提供感知class加载的监听接口(对加固场景分析特别有效)
+4. [bugfix] 64未模式下运行，execeve注入的so地址有误
+5. [feature] 增加对网卡地址，bootId的模拟
+6. [bugfix] 修复1.2.3版本重构设备指纹模块时，AndroidId模拟失败问题
+7. [bugfix] apk2jar过程，dexFile写入了ByteBuf末尾脏数据，导致在Android9上面,DexFile格式校验不通过
+8. [bugfix] 修复一个1.2.3版本重构文件系统结构导致的bug，该bug导致app升级的时候一机多号数据丢失
+
 ### V1.2.4
 1. [bugfix] dex short value  65535 overflow when rebuild entry point dex sometimes
 2. 打包过程，清理一个不需要的资源，在输出APK中节约2M空间
