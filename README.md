@@ -44,6 +44,14 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.2.6(暂未发布)
+1. [bugfix] 不应该将mock目录设置为沙箱白名单，这会影响符号反查逻辑。可能导致真实地址泄漏
+2. [bugfix] fd符号查询函数，在hook模块下，系统调用存在脏数据。使用新的地址空间接收数据。包括系统调用readlinkat和readlink
+3. [improve] 如果开发者错误的对一个函数重复hook，那么打印警告。一般一个逻辑只应该hook一个函数一次。多次hook应该为不同模块功能。大量挂载相同hook点将会导致内存溢出
+4. [feature] 开始引入Okio模块，可能在下个版本实现完整的流量监控
+5. [bugfix] 修复hook框架在hook函数的时候，出现方法编译前StopTheWorld导致compile函数死锁(大型app上大约5%概率发生)。进而引发app卡死在启动屏的问题。本修改点影响了hook流程，需要做大量兼容测试
+6. [feature] ratel日志TAG统一，不再区分java和native
+
 ### V1.2.5
 1. [feature] 在android7.0上，class init 符号未适配导致safe hook static method失效
 2. [feature] 无论如何，只要class没有初始化，那么都使用延迟hook方案
