@@ -52,6 +52,7 @@ ratelManager的apk，在ratel server的首页有下载地址
 5. [bugfix] 修复hook框架在hook函数的时候，出现方法编译前StopTheWorld导致compile函数死锁(大型app上大约5%概率发生)。进而引发app卡死在启动屏的问题。本修改点影响了hook流程，需要做大量兼容测试
 6. [feature] ratel日志TAG统一，不再区分java和native
 7. [bugfix] 可能是一个代码优化框架的bug导致某些情况下app打开卡屏,所以对一个函数开放混淆白名单
+8. [bugfix] 部分app的Application入口配置没有android,导致app代码入口解析失败（追加发布）
 
 ### V1.2.5
 1. [feature] 在android7.0上，class init 符号未适配导致safe hook static method失效
