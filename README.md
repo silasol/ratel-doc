@@ -43,6 +43,10 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 # 发布记录
 ## 引擎发布记录
+### V1.2.6
+1. [improve] sync sandhook : disable forceProcessProfiles in Q
+2. [bugfix] 存在弹窗情况下，无法自杀app问题
+3. [bugfix] 文件句柄资源泄漏
 
 ### V1.2.6
 1. [bugfix] 不应该将mock目录设置为沙箱白名单，这会影响符号反查逻辑。可能导致真实地址泄漏
