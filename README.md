@@ -43,6 +43,11 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 # 发布记录
 ## 引擎发布记录
+
+### V1.2.8
+1. [bugfix] rebuild dex 模式下,cinit代码识别错误&强行继承了带final修饰的attachBaseContext方法导致facebook打开闪退
+2. [improve] 移除ratel框架不支持的so
+
 ### V1.2.7
 1. [improve] sync sandhook : disable forceProcessProfiles in Q
 2. [bugfix] 存在弹窗情况下，无法自杀app问题
