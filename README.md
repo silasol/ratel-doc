@@ -45,6 +45,14 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.2.9
+1. [improve] 不允许app读取系统systemSetting定义以外的数据，避免app矩阵泄漏设备指纹id
+2. [bugfix] rebuildDex如遇寄存器使用超V15，无法直接访问p0,p1寄存器，导致FacebookLite构建失败
+3. [improve] 通过DexMerger替换smali整体的dex重编译，大幅提升rebuildDex的构建速度，感谢skyun1314(https://github.com/skyun1314/)
+4. [improve] 支持已经被Ratel感染过的APK的重编
+5. [improve] 支持在重编后的apk里面植入默认的SmliLog模块，方便进行APKTool重打包调试
+6. [feature] 引入R8转换模块，支持重编引擎在Android环境下运行。Ratel重编引擎同时支持服务器和Android环境，并将在下个版本集成到RatelManager中
+
 ### V1.2.8
 1. [bugfix] rebuild dex 模式下,cinit代码识别错误&强行继承了带final修饰的attachBaseContext方法导致facebook打开闪退
 2. [improve] 移除ratel框架不支持的so
