@@ -45,6 +45,14 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.0
+1. [bugfix] rebuildDex如遇method带annotation，将会导致指令解析不成功，引发构建失败
+2. [bugfix] 插件解析过程，未将配置内容存储到ratel全局配置文件，Android解析meta过程将会猜测配置项类型，导致数字格式的字符串无法被识别
+3. [bugfix] dex index overflow的时候，将要进行dex拆分。ratel拆分过程识别supperclass逻辑有误
+4. [bugfix] #13 有道词典某加固版本构建失败,该加固版本存在baksmali对抗混淆。dex中存在错误的smali指令，但是该指令不会被执行，却会导致baksmali解码指令异常
+5. [improve] #12 使用AXmlConverter替代四哥的XmlEditor 参考资料： https://github.com/skyun1314/haha/  https://github.com/Sable/axml 并且支持将app的debug开关打开，ratel app开始支持免root调试
+
+
 ### V1.2.9
 1. [improve] 不允许app读取系统systemSetting定义以外的数据，避免app矩阵泄漏设备指纹id
 2. [bugfix] rebuildDex如遇寄存器使用超V15，无法直接访问p0,p1寄存器，导致FacebookLite构建失败
