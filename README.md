@@ -45,6 +45,11 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.1
+1. [bugfix] 部分无application的应用，MainActivity入口解析失败
+2. [improve] ROM厂商设备指纹泄漏问题，目前适配小米+华为
+3. [improve] 支持contentProvider拦截
+
 ### V1.3.0
 1. [bugfix] rebuildDex如遇method带annotation，将会导致指令解析不成功，引发构建失败
 2. [bugfix] 插件解析过程，未将配置内容存储到ratel全局配置文件，Android解析meta过程将会猜测配置项类型，导致数字格式的字符串无法被识别
