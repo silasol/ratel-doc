@@ -49,6 +49,8 @@ ratelManager的apk，在ratel server的首页有下载地址
 1. [bugfix] 部分无application的应用，MainActivity入口解析失败
 2. [improve] ROM厂商设备指纹泄漏问题，目前适配小米+华为
 3. [improve] 支持contentProvider拦截
+4. [bugfix] 修复luckin coffee闪退
+5. [sync] sync sandhook: fix can not get threadId when hook Thread
 
 ### V1.3.0
 1. [bugfix] rebuildDex如遇method带annotation，将会导致指令解析不成功，引发构建失败
