@@ -45,6 +45,12 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.2
+1. [improve] 框架在android9之后，bypass hidden API policy痕迹处理
+2. [bugfix] keygen模块command重构错误
+3. [bugfix] 今日头条7.5.5构建失败 java.nio.BufferOverflowException
+4. [bugfix] system_properties_hook，导致在华为某机型上面卡白屏
+
 ### V1.3.1
 1. [bugfix] 部分无application的应用，MainActivity入口解析失败
 2. [improve] ROM厂商设备指纹泄漏问题，目前适配小米+华为
