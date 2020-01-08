@@ -45,6 +45,12 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.3
+1. [improve] 网卡硬件地址泄漏
+2. [bugfix] rebuild failed when "bogus opcode"
+3. [feature] apk打包，支持zipalign
+4. [improve] 重构serial fake模块,根据serial在Android不同版本下的规则不同单独抽取serial模拟模型，而非之前和system properties get 逻辑耦合。这可能导致部分情况存在手机序列号信息丢失
+
 ### V1.3.2
 1. [improve] 框架在android9之后，bypass hidden API policy痕迹处理
 2. [bugfix] keygen模块command重构错误
