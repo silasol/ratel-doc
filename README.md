@@ -32,6 +32,7 @@ ratel 大概分为以下模块
 ## [ratelAPI 通过API编程进行模块开发和ratel功能定制](4.ratelAPI.md)
 ## [虚拟化相关](5.virtual_env.md)
 ## [扩展开发包](7.ratelExtension.md)
+## [ratel调度任务](8ratelScheduler.md)
 ## [常见问题处理](6.faq.md)
 
 # 基本使用流程
@@ -44,6 +45,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 # 发布记录
 ## 引擎发布记录
+
+### V1.3.4
+1. [feature] 支持调度任务，以提供脱离USB控制的UI驱动型自动化任务
 
 ### V1.3.3
 1. [improve] 网卡硬件地址泄漏
