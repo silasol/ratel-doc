@@ -1,6 +1,6 @@
 # ratel调度任务
 调度任务是ratel底层支持的一套可以在目标app上面实现定期执行任务的一种机制。这主要是给SupperAppium提供便利支持，也即为UI驱动型任务提供框架功能。
-不过实际上ratel scheduler本身这是一个框架功能，到底能做什么还是依赖使用方对框架的理解和对业务的想象。
+不过实际上ratel scheduler本身这是一个框架功能，到底能做什么还是依赖使用方对框架的理解和对业务的想象。``RatelScheduler``的功能可以实现手机自动化点击任务运行完全不依赖电脑(不需要插入USB，通过USB控制)
 
 ## ratelScduler设计目的
 如果仅仅是提供一种定时任务的功能，依靠Android本身的timer，或者AlarmManager完全可用。但是对于UItask来说并不足够。主要原因如下：
