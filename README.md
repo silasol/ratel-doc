@@ -33,6 +33,7 @@ ratel 大概分为以下模块
 ## [虚拟化相关](5.virtual_env.md)
 ## [扩展开发包](7.ratelExtension.md)
 ## [ratel调度任务](8ratelScheduler.md)
+## [RDP](9.RDP.md)
 ## [常见问题处理](6.faq.md)
 
 # 基本使用流程
