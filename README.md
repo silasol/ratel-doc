@@ -43,6 +43,7 @@ ratel 大概分为以下模块
 ratelManager的apk，在ratel server的首页有下载地址
 3. 编写Xposed模块插件（也可以叫做Ratel模块插件）,安装到手机，并在RatelManager中配置即可
 4. xposed模块插件标准demo可以参考: http://git.virjar.com/ratel/ratel-demo
+5. 如果你想通过git submodule直接依赖ratel提供的快照API，可以follow相关项目:[http://git.virjar.com/ratel/ratelextension](http://git.virjar.com/ratel/ratelextension) 和 [http://git.virjar.com/ratel/ratelapi](http://git.virjar.com/ratel/ratelapi)
 
 # 发布记录
 ## 引擎发布记录
