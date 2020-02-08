@@ -47,6 +47,14 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.5
+1. [feature] RDP模块支持
+2. [feature] support settings provider
+3. [improve] 基站id漂移规则不合理导致百度定位API在省电定位模式下，通过网络定位失败
+4. [improve] appendDex模式下，如遇无application场景，需还原application为``android.app.Applicaion``
+5. [improve] 默认UncaughtExceptionHandler可能为null，做UncaughtExceptionHandler托管时增加null判断
+
+
 ### V1.3.4
 1. [feature] 支持调度任务，以提供脱离USB控制的UI驱动型自动化任务
 
