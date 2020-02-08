@@ -83,13 +83,13 @@ ratelManager的apk，在ratel server的首页有下载地址
 2. [bugfix] 插件解析过程，未将配置内容存储到ratel全局配置文件，Android解析meta过程将会猜测配置项类型，导致数字格式的字符串无法被识别
 3. [bugfix] dex index overflow的时候，将要进行dex拆分。ratel拆分过程识别supperclass逻辑有误
 4. [bugfix] #13 有道词典某加固版本构建失败,该加固版本存在baksmali对抗混淆。dex中存在错误的smali指令，但是该指令不会被执行，却会导致baksmali解码指令异常
-5. [improve] #12 使用AXmlConverter替代四哥的XmlEditor 参考资料： https://github.com/skyun1314/haha/  https://github.com/Sable/axml 并且支持将app的debug开关打开，ratel app开始支持免root调试
+5. [improve] #12 使用AXmlConverter替代四哥的XmlEditor  并且支持将app的debug开关打开，ratel app开始支持免root调试
 
 
 ### V1.2.9
 1. [improve] 不允许app读取系统systemSetting定义以外的数据，避免app矩阵泄漏设备指纹id
 2. [bugfix] rebuildDex如遇寄存器使用超V15，无法直接访问p0,p1寄存器，导致FacebookLite构建失败
-3. [improve] 通过DexMerger替换smali整体的dex重编译，大幅提升rebuildDex的构建速度，感谢skyun1314(https://github.com/skyun1314/)
+3. [improve] 通过DexMerger替换smali整体的dex重编译，大幅提升rebuildDex的构建速度，感谢skyun1314
 4. [improve] 支持已经被Ratel感染过的APK的重编
 5. [improve] 支持在重编后的apk里面植入默认的SmaliLog模块，方便进行APKTool重打包调试
 6. [feature] 引入R8转换模块实现class字节码转Dex字节码，支持重编引擎在Android环境下运行。Ratel重编引擎同时支持服务器和Android环境，并将在下个版本集成到RatelManager中
