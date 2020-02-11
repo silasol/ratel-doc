@@ -54,6 +54,7 @@ ratelManager的apk，在ratel server的首页有下载地址
 3. [improve] 基站id漂移规则不合理导致百度定位API在省电定位模式下，通过网络定位失败
 4. [improve] appendDex模式下，如遇无application场景，需还原application为``android.app.Applicaion``
 5. [improve] 默认UncaughtExceptionHandler可能为null，做UncaughtExceptionHandler托管时增加null判断
+6. [bugfix] AXml(Panxiaobo)处理UTF8类型的StringPool的时候，AXML格式解析有误，导致当字符串偏长的时候出现``Negative initial size: -43``
 
 
 ### V1.3.4
