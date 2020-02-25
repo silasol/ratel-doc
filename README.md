@@ -52,6 +52,10 @@ ratelManager的apk，在ratel server的首页有下载地址
 1. [improve] 架构优化，移除ArtHook兼容路由层，移除在存在Xposed环境上对Ratel框架的支持，ArtHook框架唯一指定SandHook
 2. [improve] 架构优化，抽象RatelRuntime多种引擎入口封装，为Zelda实现提供支持
 3. [feature] 支持zelda引擎：https://github.com/virjar/zelda 请注意这是Zelda商业版，拥有超越开源版本的稳定性、安全性、扩展性
+4. [bugfix]  追加:兼容xposed module使用AndroidAppHelper,上一个版本由于代码优化模块导致AndroidAppHelper被移除(兼容微X模块)
+5. [improve] 支持Xposed模块被ratel感染(可以兼容部分Xposed模块依靠自身是否被hook来判定Xposed环境是否生效)(兼容微X模块)
+6. [bugfix]  只在rebuildDex模式下，必须存在entry point class，appendDex和zelda模式下不需要有这个判定(兼容微X模块)
+7. [bugfix]  appendDex模式下，无Entry Application需要通过TextUtil判定，以防配置传递长度为0的字符串(兼容微X模块)
 
 ### V1.3.5
 1. [feature] RDP模块支持
