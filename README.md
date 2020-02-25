@@ -48,6 +48,11 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.6
+1. [improve] 架构优化，移除ArtHook兼容路由层，移除在存在Xposed环境上对Ratel框架的支持，ArtHook框架唯一指定SandHook
+2. [improve] 架构优化，抽象RatelRuntime多种引擎入口封装，为Zelda实现提供支持
+3. [feature] 支持zelda引擎：https://github.com/virjar/zelda 请注意这是Zelda商业版，拥有超越开源版本的稳定性、安全性、扩展性
+
 ### V1.3.5
 1. [feature] RDP模块支持
 2. [feature] support settings provider
