@@ -34,6 +34,7 @@ ratel 大概分为以下模块
 ## [扩展开发包](7.ratelExtension.md)
 ## [ratel调度任务](8ratelScheduler.md)
 ## [RDP](9.RDP.md)
+## [Zelda](10.zelda.md)
 ## [常见问题处理](6.faq.md)
 
 # 基本使用流程
