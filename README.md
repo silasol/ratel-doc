@@ -33,8 +33,9 @@ ratel 大概分为以下模块
 ## [虚拟化相关](5.virtual_env.md)
 ## [扩展开发包](7.ratelExtension.md)
 ## [ratel调度任务](8ratelScheduler.md)
-## [RDP](9.RDP.md)
-## [Zelda](10.zelda.md)
+## [RDP 类似APKtool的代码修改工具](9.RDP.md)
+## [Zelda多开分身](10.zelda.md)
+## [HotModule热发模块](11.HotModule.md)
 ## [常见问题处理](6.faq.md)
 
 # 基本使用流程
@@ -48,6 +49,10 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 # 发布记录
 ## 引擎发布记录
+
+### V1.3.7
+1. [feature] HotModule，热发模块，可远程批量部署模块，便于集群管理
+2. [improve] zelda结构优化
 
 ### V1.3.6
 1. [improve] 架构优化，移除ArtHook兼容路由层，移除在存在Xposed环境上对Ratel框架的支持，ArtHook框架唯一指定SandHook
