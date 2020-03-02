@@ -52,7 +52,8 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 ### V1.3.7
 1. [feature] HotModule，热发模块，可远程批量部署模块，便于集群管理
-2. [improve] zelda结构优化
+2. [improve] 修复Zelda引擎若干bug
+
 
 ### V1.3.6
 1. [improve] 架构优化，移除ArtHook兼容路由层，移除在存在Xposed环境上对Ratel框架的支持，ArtHook框架唯一指定SandHook
