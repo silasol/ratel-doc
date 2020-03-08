@@ -50,6 +50,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.8
+1. [feature] 支持访问模块布局资源
+
 ### V1.3.7
 1. [feature] HotModule，热发模块，可远程批量部署模块，便于集群管理
 2. [improve] 修复Zelda引擎若干bug
