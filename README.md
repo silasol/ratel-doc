@@ -1,8 +1,8 @@
 # ratel-doc
 # 文档正文
-平头哥（ratel）是一个能够在免root手机中使用xposed的框架。支持5.0-9.0。使用ratel可以任意控制app的行为，如同开启上帝模式一样。他有如下特性：
+平头哥（ratel）是一个能够在免root手机中使用xposed的框架。支持5.0-10.0。使用ratel可以任意控制app的行为，如同开启上帝模式一样。他有如下特性：
 
-1. 完全支持9.0，对比xposed框架本身在8.0的时候就各种使用不顺畅了
+1. 支持到Android较新版本(目前到android10)，对比xposed框架本身在8.0的时候就各种使用不顺畅了
 2. 免root运行，ratel运行，不需要root后者解锁bootloader。现在新手机获得root权限越来越困难。ratel可以实现免root下DIY你的手机
 3. 痕迹隐藏，对于root，xposed等常见风险操作检测，ratel框架从原理上就避免了他们。
 4. 无法影响全局，受限于实现原理，ratel无法影响系统。只能影响正常安装在手机里面的app。
@@ -14,7 +14,7 @@
 
 # 不支持
 
-*暂时不支持 android<=4.4 , android>=10未测试*
+*暂时不支持 android<=4.4*
 
 *不支持模拟器，不支持X86架构，仅支持arm or arm64*
 
@@ -52,6 +52,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 ### V1.3.8
 1. [feature] 支持访问模块布局资源
+2. [bugfix] 追加发布，fix下厨房Dex DebugInfo重构对抗，下厨房Axml stringPool stringItem增加双Null导致Axml解析错误
+3. [bugfix] mac native fake 导致zelda引擎在IO重定向之前访问虚拟空间，引发权限问题，访问失败。app崩溃
+4. [feature] 正式支持支持Android10
 
 ### V1.3.7
 1. [feature] HotModule，热发模块，可远程批量部署模块，便于集群管理
