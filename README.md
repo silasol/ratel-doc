@@ -50,6 +50,20 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.3.9
+1. 外放引擎模式API
+2. batch hook for ratel framework hook task to decrease stopTheWorld times
+3. 设备指纹一个对抗点
+4. 热发模块服务器地址修改为https，否则在Android9之后无法访问http接口
+5. bugfix: zelda模式下根据pkgname授权问题
+6. [bugfix] 修复zelda可能无法加载模块的bug
+7. sync sandhook :AndroidQ: disable FastInterpreter
+9. [sync sandHook] AndroidQ: filter thread construction hook
+10. [sync Sandhook] AndroidR: support Android R dev-preview-1
+11. [bugfix] 删除Ratel运行文件之后需要重构Ratel目录结构(在目录结构缓存之后)，否则引发：fake_maps: cannot create tmp file, errno = 2
+12. [bugfix] 纯64位模式下，命令行运行32位可执行文件，需要注入32位so文件。比如dex2oat
+
+
 ### V1.3.8
 1. [feature] 支持访问模块布局资源
 2. [bugfix] 追加发布，fix下厨房Dex DebugInfo重构对抗，下厨房Axml stringPool stringItem增加双Null导致Axml解析错误
