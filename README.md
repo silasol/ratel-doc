@@ -55,6 +55,7 @@ ratelManager的apk，在ratel server的首页有下载地址
 2. [bugfix] RatelSchduler模块 RM安装但是没有打开的情况下，可能导致app闪退。华为部分机型会出现
 3. [bugfix] 修复华为Android9首次打开链家崩溃的问题
 4. [bugfix] Proguard代码优化导致sandhook ArtMethodSizeTest调用被优化逻辑认为是无效调用，进而在vivo Android 6.0出现artMethod数据结构紊乱，出现hook卡屏
+5. [bugfix] android 10访问一个HiddenApi导致app崩溃
 
 ### V1.3.9
 1. 外放引擎模式API
