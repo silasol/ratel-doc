@@ -50,6 +50,9 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.4.1
+1. [bugfix] 隔离Ratel模块和原生Xposed模块的调用时机。否则多账号切换和Xposed模块(微X模块)可能冲突
+
 ### V1.4.0
 1. [bugfix] batch hook status change failed
 2. [bugfix] RatelSchduler模块 RM安装但是没有打开的情况下，可能导致app闪退。华为部分机型会出现
