@@ -50,6 +50,12 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.4.2
+1. [feature] RDP功能支持添加补丁dex，支持一键植入扩展代码
+2. [feature] 重编引擎支持ratel二次重编后资源迁移，包括dex代码数据
+3. [bugfix] 一个多开对抗点
+4. [feature] 支持Frida环境：TODO
+
 ### V1.4.1
 1. [bugfix] 隔离Ratel模块和原生Xposed模块的调用时机。否则多账号切换和Xposed模块(微X模块)可能冲突
 
