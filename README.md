@@ -56,6 +56,7 @@ ratelManager的apk，在ratel server的首页有下载地址
 3. [bugfix] 一个多开对抗点
 4. [feature] 支持Frida环境：TODO
 5. [bugfix] WhatsApp代码注入失败
+6. [bugfix] 一个多开对抗点，可能导致iccId泄漏和序列号泄漏
 
 ### V1.4.1
 1. [bugfix] 隔离Ratel模块和原生Xposed模块的调用时机。否则多账号切换和Xposed模块(微X模块)可能冲突
