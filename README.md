@@ -50,6 +50,16 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.4.4
+1. [feature] 支持xapk(split apk)(仅在命令行模式生效，web站点无法使用)
+
+### V1.4.3
+1. [feature] 支持IO access tracer，方便通过文件访问回溯代码关键点
+2. [bugfix] 8.0手机卡屏问题
+3. [bugfix] 存储卡白名单增加多个挂载点兼容。
+4. [bugfix] 删除nativeHook一个不应该的printf
+
+
 ### V1.4.2
 1. [feature] RDP功能支持添加补丁dex，支持一键植入扩展代码
 2. [feature] 重编引擎支持ratel二次重编后资源迁移，包括dex代码数据
