@@ -50,6 +50,24 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.4.7 
+1.[feature] kratos引擎，支持root模式下使用ratel，对标太极阳
+
+### V1.4.6
+1. [feature] JustTrustMe内置到ratelAPI中
+2. [bugfix]  android 10上面 AppComponentFactory兼容性问题fix
+3. [bugfix]  不能随便删除不支持的架构so文件
+4. [bugfix]  linker failed，can not find libratelnative_32.so
+5. [feature] ratel内置脱壳机功能
+
+### V1.4.5
+1. [bugfix] 64为手机，运行在32为模式，调用shell命令失效问题
+2. [bugfix] 跨进程调用签名生效问题修复
+3. [bugfix] 修复在windows系统运行打包程序，字符集未设置utf8导致乱码问题
+4. [feature]ratel脚本支持windows环境
+5. [feature]Android6.0之前不支持V2签名，所以需要开启V1签名
+6. [bugfix]bugfix for  String more than 65535 UTF bytes long
+
 ### V1.4.4
 1. [feature] 支持xapk(split apk)(仅在命令行模式生效，web站点无法使用)
 
