@@ -27,16 +27,17 @@ Mf+/bHIj1BMCFoOaJorudBL0r7OrkeDEa3n2snDsH8cNwJFwtTOYoBib78Gksm642bGCqUbb8BiGmMu4
 # 分模块文档
 ratel 大概分为以下模块
 
-## [ratel server感染apk的后台服务](2.ratelServer.md)
-## [ratel管理器，类似xposed intalller](3.ratelManager.md)
-## [ratelAPI 通过API编程进行模块开发和ratel功能定制](4.ratelAPI.md)
-## [虚拟化相关](5.virtual_env.md)
-## [扩展开发包](7.ratelExtension.md)
-## [ratel调度任务](8ratelScheduler.md)
-## [RDP 类似APKtool的代码修改工具](9.RDP.md)
-## [Zelda多开分身](10.zelda.md)
-## [HotModule热发模块](11.HotModule.md)
-## [常见问题处理](6.faq.md)
+- [ratel server感染apk的后台服务](2.ratelServer.md)
+- [ratel管理器，类似xposed intalller](3.ratelManager.md)
+- [ratelAPI 通过API编程进行模块开发和ratel功能定制](4.ratelAPI.md)
+- [虚拟化相关](5.virtual_env.md)
+- [扩展开发包](7.ratelExtension.md)
+- [ratel调度任务](8ratelScheduler.md)
+- [RDP 类似APKtool的代码修改工具](9.RDP.md)
+- [Zelda多开分身](10.zelda.md)
+- [HotModule热发模块](11.HotModule.md)
+- [平头哥公开模块](12.publicModules.md) 
+- [常见问题处理](6.faq.md)
 
 # 基本使用流程
 1. 使用ratel在线平台感染app： http://ratel.virjar.com/
