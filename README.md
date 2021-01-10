@@ -51,6 +51,19 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.4.8
+1. [bugfix] 部分场景dex2oat禁用功能失效
+2. [bugfix] 脱壳机组装apk可能dex组装失败导致脱壳失败
+3. [feature] 使用riru的maps hidden方法
+4. [feature] 支持native hook框架切换到Dobby
+5. [feature] 支持binder hook
+6. [feature] 设备指纹对抗方案升级(核心重点功能)
+7. [bugfix] 部分appAndroid10闪退问题修复
+8. [bugfix] 弱网环境下，热发插件推送可能不生效
+9. [feature] native helper模块，so脱壳，native函数指针定位，Io trace，native函数so文件定位等
+10. [feature] ptrace 调试的时，干掉tracePid痕迹，避免tracePid调试对抗。ratel支持免root使用ida调试功能。
+
+
 ### V1.4.7 
 1.[feature] kratos引擎，支持root模式下使用ratel，对标太极阳
 
