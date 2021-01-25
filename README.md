@@ -21,7 +21,7 @@
 
 # 公测证书（20分钟程序退出、三天后程序会永久闪退）
 ```
-Mf+/bHIj1BMCFoOaJorudBL0r7OrkeDEa3n2snDsH8cNwJFwtTOYoBib78Gksm642bGCqUbb8BiGmMu4YOg9ukvdc4ZMWd426wxnY2vdtmnMIa4IST+lUqloeVgd1Mh1G93BFrMRZNK+0ANuB4C0xKzQJDwTM5GAkhXKoJOZexSaNInUy/jiodK90r18QzqfP5yjkWUEc9hg/95raSDhkN249Md6hQ1/kUDd9TBAqKhrVtj+xWWUvK9DAJgNvl1h8E6RL+RE3PdyifTxieCkb7qXIu/r08sQtSSCbFTvYfTQ+MwjCAIcs86pmKQkdLWbq2LWAvydg5qOCho5ZRubnh/EgevQs+NrwVsrlZKrtww7Rx/0kdPDKv2KqXBRk53pQ0t6bGYcFlaLmUMhU1eCnyrYn0wrhnVP3AGV1Tc3rDvOr8v+amC+HCGF+5LRyVl2/B+jK1Q2NQ8DfyGuDKSElSZYDElt4s0htv6W/44FPyQA3kuLiZuWwzh2RT4CsEhMZPnA/5PdfPCZj+gmwgLKbM2T09I+wwAdyZLhUxQgN9sL9+faQIyiKqCF6uUWYjzlx0N6vaAn5VSeBvlaxzaf12yRQiJlbOONMuwihw1qQl94ocrUmctylOF/nLFp+l0Zbwab8ZJYoOY0JUp9cX4rezJLbyRMlODK6ATxciYAp+g=
+fhbzcaYYVEjLc1lNLonVWFMTq+T11NyISHMwsYofh8tlOWnQwDyG6VgvzV9w64hKcsQVVzaR18qGOS8qyIg1hn2kvCquMgcLdgRAqwu5Ndnssdi27SMCXLN3nwxowTD/tNHbQ8/exYLBA/M2he2lbaPmG07sFkHBPjQ5gyFxqcBccBahtp4nk9AIXz6EdZIlfBjtbAVDIaCkF1TprAKgvuAolWzvAMCpp6gltxXz1vHsUdLYyk6+2n3XHI3n8rIktG81YSxYcT0UvKb8BuA7UJMQ6o2n61Mmzc4pSvnF4KJO4fOzNJ5rZoblJStUjX+hqvDLB2Nqlt/1Ay9jaCfVCKYNTI5NAXZ6Bkr6ebtMtXBqK/jkZ96jvoo0Vnsr8EdVlv3jZV4ITSQBBJRX8o71JDVZImkco1uRieRapER9KCMqz2Ar7AnZ55R0Cqtk5mKX1QtkmQt3BrT9sVjQJv9/M+7sHxDYlisLCwpyIQ55PT2izPBIWfVf3CO8uLbtrhvPDgrl0hnEOYFUp8EODkvdlglfKg8jh8xpfYz4/QIf7lGpQVPbjjPD9FSNF3Hg9D7e6Y1rloRmDPsMRSk1+v8eW9Ls4wAXhqf7ov3x8E2aCT82XPZY4Vk4PEu93zqLoDPiPvgtmylpK2dOgGv5gyZJ0/A/M0uyWh3pKE/hcAvCK/ePUeTpYOaGEmQtKgerin2aOtCz3SNzsS+w+aUYYgxcRin1XWS6j4/bizQwy5bTnRAPc6fmNU/t7KiybwLsyYGXE/7tWwSPPSbOka26fMT90epxi5vb5zl0lMfWG5VaYGNU00zVmh2F3+su/+s7gbRsnpmQVjjfx4lwUTW4BBh976sqD6E8WqVY4TnCrQyDNFCY5o8fVv4AssjrRdWTjUKC08x9JP7CGcmHta2qftRr+O9Ou8gPNZ2aXmulY2fms38I2NOjw6sXdL+Dv4pw+2IH84mA46MySrhO1xv8diFgiTm2HHG55DiJrfn4VTYa8tjpogGVIhNA9joBZrFCPL1R
 ```
 
 # 分模块文档
@@ -50,6 +50,19 @@ ratelManager的apk，在ratel server的首页有下载地址
 
 # 发布记录
 ## 引擎发布记录
+
+### V1.4.8
+1. [bugfix] 部分场景dex2oat禁用功能失效
+2. [bugfix] 脱壳机组装apk可能dex组装失败导致脱壳失败
+3. [feature] 使用riru的maps hidden方法
+4. [feature] 支持native hook框架切换到Dobby
+5. [feature] 支持binder hook
+6. [feature] 设备指纹对抗方案升级(核心重点功能)
+7. [bugfix] 部分appAndroid10闪退问题修复
+8. [bugfix] 弱网环境下，热发插件推送可能不生效
+9. [feature] native helper模块，so脱壳，native函数指针定位，Io trace，native函数so文件定位等
+10. [feature] ptrace 调试的时，干掉tracePid痕迹，避免tracePid调试对抗。ratel支持免root使用ida调试功能。
+
 
 ### V1.4.7 
 1.[feature] kratos引擎，支持root模式下使用ratel，对标太极阳
