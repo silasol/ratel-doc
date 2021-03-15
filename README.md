@@ -51,6 +51,21 @@ ratelManager的apk，在ratel server的首页有下载地址
 # 发布记录
 ## 引擎发布记录
 
+### V1.4.9 20210315
+1. [bufix] 某很老的壳子的dex格式对抗
+2. [feature] 支持给app增加一些权限特有权限声明（入app本身没有申请sdcard，此时ratel插件无权限读写sdcard）
+3. [bugfix] appendDex模式，如果application注册了一些生命周期函数，可能导致某些函数回掉不成功
+4. [bugfix] 分身模式下，Android7.0可能闪退(HOOK了一些低版本不存在的api导致NPE)
+5. [feature] 同步SandHook代码
+6. [bugfix] 使用ratle脚本提取apk的原apk，可能导致NPE
+7. [bugfix]  Nubia Android5.0 Resource构造函数适配&CellLocation fake aidlAPI参数适配 & sdcard创建ratel相关文件夹，可能存在部分sdcard挂载点没有权限
+8. [bugfix] android5.0 java.lang.reflect.Proxy.generateProxy 参数签名兼容
+9. [feature] hotmodule switch，支持在rm中临时禁用热发插件，方便调试
+10. [bugfix] 对于DexSplit的apk进行二次重打包会导致： Multiple ZIP entries with the same name（addsOn判定逻辑不严谨）
+11. [bugfix] 360壳子，Android10，Android64位模式运行闪退
+12. [bugfix] android 6.0.1,资源构造方法可能有误导致闪退
+13. [bugfix] windows环境下构建apk闪退问题
+
 ### V1.4.8
 1. [bugfix] 部分场景dex2oat禁用功能失效
 2. [bugfix] 脱壳机组装apk可能dex组装失败导致脱壳失败
